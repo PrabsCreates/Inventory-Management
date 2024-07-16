@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block title %} About {% endblock title %}
+
+
+{% block content %}
+    
+    {% if not user.is_authenticated  %}
+        <br>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Go Back</a>
+    {% endif %}    
+    
+    <div class="align-middle" style="color: #4caf50; font-style: bold; font-size: 3rem;">IMS</div>
+    <div class="align-middle" style="color: rgb(73, 73, 73)">An Inventory Management System</div>
+    <br><br>
+
+    <div class="align-middle"> 
+        <h2 style="color:#4caf50">| About |</h3> <br>
+            <p>
+                Organization-oriented business software has seen a significant transformation over the past ten years. Traditional accounting 
+                and commercial management programs have progressively made way for integrated solutions that meticulously address every business 
+                concern of each particular enterprise. Since manual handling may result in human mistakes that might reduce warehouse utilization, 
+                inventory management must be automated. A comprehensive analysis of the system must be done before the process can be automated.
+                A crucial step in the process is picking a management system that fits the relevant specifications. For a corporation to be successful, 
+                it is essential to have a management system that integrates all organizational units at the informational level. With the right system, 
+                it is easier to provide coordination across units, eliminate waste, and make quicker, better decisions. A company's decision to 
+                implement a management system represents a significant investment, therefore selecting the best system necessitates serious thought.
+            </p>
+      
+
+
+{% endblock content %}
